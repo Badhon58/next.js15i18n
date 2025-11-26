@@ -1,0 +1,24 @@
+/* For modern browsers */
+.no-arrow::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+/* For Firefox */
+.no-arrow {
+  -moz-appearance: textfield;
+}
+
+/* For IE10/11 */
+.no-arrow::-ms-expand {
+  display: none;
+}
+.eyebutton {
+  @apply absolute top-0 h-full w-full -z-10 group-hover:z-20 flex group-hover:bg-black group-hover:bg-opacity-20
+  justify-center items-center transition;
+}
+.success {
+  @apply capitalize inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none text-sm py-2 px-4 shadow-sm hover:shadow-md bg-green-500 relative bg-gradient-to-b from-green-500 to-green-600 border-green-600 text-stone-50 rounded-lg hover:bg-gradient-to-b  hover:border-green-600;
+}
+.pending{
+    @apply capitalize inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none text-sm py-2 px-4 shadow-sm hover:shadow-md bg-red-500 relative bg-gradient-to-b from-red-500 to-red-600 border-red-600 text-stone-50 rounded-lg hover:bg-gradient-to-b  hover:border-red-600
+}
